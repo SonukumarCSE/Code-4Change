@@ -7,7 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
-
+import { cn } from "../utils/lib";
 // Contact
 export const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -122,13 +122,17 @@ export const Contact = () => {
   };
 
   return (
+    
     <SectionWrapper idName="contact">
+      
       <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+        
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
         >
           {/* Title */}
+          
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Register Here.</h3>
 
@@ -228,7 +232,30 @@ export const Contact = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
         >
-          <EarthCanvas />
+          {/* <EarthCanvas /> */}
+          <div
+        className={cn(
+          styles.paddingX,
+          "absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5",
+        )}
+      >
+        {/* Title */}
+        <div className="flex flex-col justify-center items-center mt-5">
+          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+        </div>
+
+        {/* About Me */}
+        <div>
+          <h1 className={cn(styles.heroHeadText, "text-white")}>
+            IEEE-SSIT <span className="text-[#915eff]"> & CSED</span>
+          </h1>
+          <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
+            Code for Impact <br className="sm:block hidden" />
+            Change the World Together
+          </p>
+        </div>
+      </div>
         </motion.div>
       </div>
     </SectionWrapper>

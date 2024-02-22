@@ -15,20 +15,20 @@ export const Hero = () => {
         )}
       >
         {/* Title */}
-        <div className="flex flex-col justify-center items-center mt-5">
+        {/* <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
+        </div> */}
 
         {/* About Me */}
         <div>
-          <h1 className={cn(styles.heroHeadText, "text-white")}>
+          {/* <h1 className={cn(styles.heroHeadText, "text-white")}>
             IEEE-SSIT <span className="text-[#915eff]"> & CSED</span>
           </h1>
           <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
             Code for Impact <br className="sm:block hidden" />
             Change the World Together
-          </p>
+          </p> */}
         </div>
       </div>
 
