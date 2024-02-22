@@ -8,7 +8,9 @@ import {
   Hero,
   Navbar,
   Tech,
+ 
   Works,
+  
   StarsCanvas,
 } from "./components";
 import Banner from "./components/banner";
@@ -27,20 +29,23 @@ const App = () => {
           <Contact />
           
         </div>
-        <Experience />
         <About />
+        <Experience />
+        
         
         
         
         {/* <Works /> */}
         {/* <Hero /> */}
         <Feedbacks />
+      
         <Tech />
         {/* Contact */}
         <div className="relative z-0">
           
           <StarsCanvas />
         </div>
+
         <Footer />
       </div>
     </BrowserRouter>
