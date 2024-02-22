@@ -59,9 +59,9 @@ export const About = () => {
 
         {/* Service Card */}
         <div className="mt-20 flex flex-wrap gap-10">
-          {SERVICES.map((service, i) => (
+          {/* {SERVICES.map((service, i) => (
             <ServiceCard key={service.title} index={i} {...service} />
-          ))}
+          ))} */}
         </div>
       </>
     </SectionWrapper>

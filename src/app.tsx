@@ -31,11 +31,11 @@ const App = () => {
         <About />
         
         
-        <Tech />
+        
         {/* <Works /> */}
-        <Hero />
+        {/* <Hero /> */}
         <Feedbacks />
-
+        <Tech />
         {/* Contact */}
         <div className="relative z-0">
           
