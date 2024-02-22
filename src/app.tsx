@@ -25,12 +25,14 @@ const App = () => {
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar hide={hide} />
           <Contact />
-          <Hero />
+          
         </div>
         <About />
         <Experience />
+        
         <Tech />
         {/* <Works /> */}
+        <Hero />
         <Feedbacks />
 
         {/* Contact */}
