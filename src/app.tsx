@@ -15,7 +15,7 @@ import {
 } from "./components";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
-
+import FAQ from './components/faq';
 // App
 const App = () => {
   const [hide, setHide] = useState(true);
@@ -38,7 +38,7 @@ const App = () => {
         {/* <Works /> */}
         {/* <Hero /> */}
         <Feedbacks />
-      
+        <FAQ />
         <Tech />
         {/* Contact */}
         <div className="relative z-0">
